@@ -1,0 +1,15 @@
+{
+  "id": "dev.daryedev.tally",
+  "name": "Tally",
+  "version": "1.0.0",
+  "developer": "DaryeDev",
+  "accent": "#7CE0B8",
+  "icon": "M5 5v14M10 5v14M15 5v14M20 5v14M3 17L22 7",
+  "description": "A daily counter with a goal. Count from the glasses or the phone.",
+  "minVista": "0.1.0",
+  "phoneUi": "schema",
+  "permissions": [
+    { "id": "notify", "reason": "Tells you when you reach your daily goal." },
+    { "id": "background", "reason": "Keeps your count if you leave the app." }
+  ]
+}

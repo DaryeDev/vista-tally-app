@@ -1,0 +1,33 @@
+[
+  {
+    "type": "Card",
+    "children": [
+      { "type": "Text", "text": "TODAY", "style": "caption" },
+      { "type": "Text", "text": "{{n}} / {{goal}}", "style": "title" },
+      { "type": "Text", "text": "{{msg}}", "dim": true }
+    ]
+  },
+  { "type": "Segmented", "options": ["1", "5", "10"], "value": "@step", "action": { "op": "step" } },
+  { "type": "Button", "label": "Add {{step}}", "action": { "op": "add" } },
+  { "type": "Button", "label": "Undo", "variant": "secondary", "action": { "op": "undo" } },
+  {
+    "type": "Card",
+    "children": [
+      { "type": "Slider", "label": "Daily goal", "min": 1, "max": 100, "value": "@goal", "action": { "op": "goal" } }
+    ]
+  },
+  {
+    "type": "ListGroup",
+    "children": [
+      { "type": "Toggle", "label": "Notify at goal", "on": "@notify", "action": { "op": "notify" } }
+    ]
+  },
+  {
+    "type": "Card",
+    "if": "@hasLog",
+    "children": [
+      { "type": "Text", "text": "RECENT", "style": "caption" },
+      { "type": "ListGroup", "each": "@log", "template": { "type": "Text", "text": "{{item}}", "style": "mono" } }
+    ]
+  }
+]
