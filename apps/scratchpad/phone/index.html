@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scratchpad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <label for="text">Note for your glasses</label>
+    <textarea id="text" maxlength="280" rows="5" placeholder="Something short to read at a glance"></textarea>
+    <div class="count" id="count">0 / 280</div>
+
+    <div class="field">Text size</div>
+    <div class="seg" id="size">
+      <button data-v="small">Small</button>
+      <button data-v="large">Large</button>
+    </div>
+
+    <div class="field">Colour</div>
+    <div class="swatches" id="color">
+      <button data-v="cream" aria-label="Cream" style="--c:#f4f1ea"></button>
+      <button data-v="mint" aria-label="Mint" style="--c:#7ce0b8"></button>
+      <button data-v="amber" aria-label="Amber" style="--c:#ffb86b"></button>
+    </div>
+
+    <button class="send" id="send">Send to glasses</button>
+    <p class="status" id="status"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

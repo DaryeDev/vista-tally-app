@@ -1,0 +1,14 @@
+{
+  "id": "dev.daryedev.scratchpad",
+  "name": "Scratchpad",
+  "version": "1.0.0",
+  "developer": "DaryeDev",
+  "accent": "#FFB86B",
+  "icon": "M4 20h4L19 9l-4-4L4 16v4zM13 7l4 4",
+  "description": "Type a short note on the phone and read it on the glasses. The phone page is plain HTML.",
+  "minVista": "0.1.0",
+  "phoneUi": "web",
+  "permissions": [
+    { "id": "webview", "reason": "Shows this app's own page on the phone. The page cannot use the network." }
+  ]
+}
